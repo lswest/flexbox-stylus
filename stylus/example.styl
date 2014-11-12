@@ -1,0 +1,29 @@
+@import 'flexbox'
+
+@media screen
+    body
+        header,footer,section
+            flexbox(flex)
+            flex-direction(column)
+            flex-align(start)
+        header, footer
+            width: 100%
+        article
+            width: 60%
+        aside, div.sidebar
+            flex(20%, 1)
+
+        aside
+            flex-group(1)
+            display none
+        div.sidebar
+            flex-group(3)
+        article
+            flex-group(2)
+            display none
+        footer p
+            flex-self(stretch)
+
+    @-moz-document url-prefix()
+        body article
+            flex-firefox()
