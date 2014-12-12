@@ -19,6 +19,7 @@ Browser support can be seen here: http://caniuse.com/#search=flex-box
 - [`flex-shrink(value)`][flex-shrink]
 - [`flex-direction(value)`][flex-direction]`value` can be: *row*, *row-reverse*, *column* or *column-reverse*
 - [`flex-wrap(value)`][flex-wrap] Accepts the 3 options: *nowrap*, *wrap*, *wrap-reverse*
+- [`flex-flow(value)`][flex-flow] Shortcut for `flex-direction || flex-wrap`. Example: `flex-flow(row wrap)`
 - [`justify-content(value)`][justify-content] `value` can be: *start*, *end*, *center*, *space-bottom* or *space-around*
 - [`align-content(value)`][align-content] `value` can be the same options as for `justify-content(value)`
 - [`align-items(value)`][align-items] `value` can be: *start*, *end*, *stretch*, *center*, *baseline*
