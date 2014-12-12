@@ -1,29 +1,32 @@
 @import 'flexbox'
 
-@media screen
-    body
-        header,footer,section
-            flexbox(flex)
-            flex-direction(column)
-            flex-align(start)
-        header, footer
-            width: 100%
-        article
-            width: 60%
-        aside, div.sidebar
-            flex(20%, 1)
-
-        aside
-            flex-group(1)
-            display none
-        div.sidebar
-            flex-group(3)
-        article
-            flex-group(2)
-            display none
-        footer p
-            flex-self(stretch)
-
-    @-moz-document url-prefix()
-        body article
-            flex-firefox()
+*
+  box-sizing border-box
+body
+  max-width 720px
+  margin 0 auto
+  header,footer,section
+    flexbox(flex)
+    flex-align(start)
+  section
+    justify-content(space-between)
+    align-items(center)
+  header, footer
+    flex-basis(100%)
+    background #f7f7f7
+  article
+    flex-basis(48%)
+    background #f4ccf4
+    height 100%
+  aside, div.sidebar
+    flex(24% 0)
+    background #e4e4e4
+    height 100%
+  aside
+    order(1)
+  div.sidebar
+    order(3)
+  article
+    order(2)
+  footer p
+    flex-grow(1)
